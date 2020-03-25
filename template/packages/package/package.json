@@ -1,0 +1,27 @@
+{
+  "name": "<%= name %>",
+  "version": "0.1.0",
+  "description": "<%= description %>",
+  "author": "<%- author.name%> <<%-author.email%>>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "<%= name %>"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "fs-extra": "^8.1.0"
+  },
+  "homepage": "https://github.com/<%- author.name %>/<%= name %>/tree/master/packages/xxx",
+  "bugs": {
+    "url": "https://github.com/<%- author.name %>/<%= name %>/issues"
+  }
+}

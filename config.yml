@@ -1,0 +1,26 @@
+ejsFiles:
+  - package.json
+  - LICENSE
+  - README.md
+  - README_EN.md
+
+  - packages/package/package.json
+  - packages/package/README.md
+
+  - packages/package-cli/src/index.ts
+  - packages/package-cli/package.json
+  - packages/package-cli/README.md
+prompts:
+  - name: name
+    type: input
+    message: 项目名
+    default: "{{basename}}"
+  - name: description
+    type: input
+    message: 描述
+    default: "{{name}}"
+  - name: author
+    type: input
+    message: 作者
+    format: authorSplit
+    default: "{{defaultUser | authorJoin}}"

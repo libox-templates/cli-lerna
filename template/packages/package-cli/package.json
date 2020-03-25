@@ -1,0 +1,31 @@
+{
+  "name": "<%= name %>-cli",
+  "version": "0.1.0",
+  "description": "<%= description %>",
+  "author": "<%- author.name%> <<%-author.email%>>",
+  "license": "MIT",
+  "bin": {
+    "<%= name %>": "dist/index.js"
+  },
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "<%= name %>"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "<%= name %>": "^0.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.7.0"
+  },
+  "homepage": "https://github.com/<%- author.name %>/<%= name %>/tree/master/packages/xxx",
+  "bugs": {
+    "url": "https://github.com/<%- author.name %>/<%= name %>/issues"
+  }
+}
