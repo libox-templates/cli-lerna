@@ -10,7 +10,7 @@
     "lint": "eslint '{packages}/**/*.{ts,tsx}'",
     "lint:fix": "eslint --fix '{packages}/**/*.{ts,tsx}'",
     "commit": "git-cz",
-    "release": "lerna version",
+    "release": "npm run build && lerna publish",
     "test": "jest",
     "test:coverage": "jest --coverage"
   },
